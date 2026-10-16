@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Boutique Coffee Shop - Coffee Selection</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  
+  <header>
+    <h1>Bean Boutique</h1>
+    <p>Crafting Perfect Coffee Moments</p>
+  </header>
+
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="coffee.html" class="active">Coffee Selection</a></li>
+      <li><a href="equipment.html">Brewing Equipment</a></li>
+      <li><a href="events.html">Events & Workshops</a></li>
+      <li><a href="cart.html">Shopping Cart <span id="cart-count" class="cart-badge">3</span></a></li>
+      <li><a href="offers.html">Special Offers</a></li>
+    </ul>
+  </nav>
+
+  
+  <main class="container">
+    <section class="page-title">
+      <h2>Our Unique Coffee Blends & Single Origins</h2>
+      <p>Explore our carefully curated roasted coffee beans, complete with tasting notes and brewing guides.</p>
+    </section>
+
+    
+    <div class="search-section">
+      <h2>Find Your Coffee</h2>
+      <div class="search-box">
+        <input type="text" id="coffeeSearch" placeholder="Search coffee blends or tasting notes (e.g., Espresso, Chocolate, Citrus)..." onkeyup="filterCoffee()">
+      </div>
+    </div>
+
+    
+    <div class="catalogue-grid" id="coffeeGrid">
+      
+      
+      <article class="product-card">
+  
+  <img src="images/Ethiopian%20Yirgacheffe%20Coffee.png" alt="Ethiopian Yirgacheffe Coffee" class="product-img">
+  
+  <div class="card-content">
+    <h3>Ethiopian Yirgacheffe</h3>
+    <p class="notes"><strong>Tasting Notes:</strong> Jasmine, Lemon, Bergamot</p>
+    <p class="price">$18.50 / 250g</p>
+    <button class="btn" onclick="addToCart('Ethiopian Yirgacheffe', 18.50)">Add to Cart</button>
+
+  </div>
+</article>
+
+
+      
+     <article class="product-card">
+  
+  <img src="images/Colombian%20Supremo.jpg" alt="Colombian Supremo" class="product-img">
+  
+  <div class="card-content">
+    <h3>Colombian Supremo</h3>
+    <p class="notes"><strong>Tasting Notes:</strong> Caramel, Milk Chocolate, Green Apple</p>
+    <p class="price">$16.00 / 250g</p>
+    <button class="btn" onclick="addToCart('Colombian Supremo', 16.00)">Add to Cart</button>
+
+  </div>
+</article>
+
+
+     
+      <article class="product-card">
+  
+  <img src="images/Sumatra%20Mandheling.png" alt="Sumatra Mandheling" class="product-img">
+  
+  <div class="card-content">
+    <h3>Sumatra Mandheling</h3>
+    <p class="notes"><strong>Tasting Notes:</strong> Dark Chocolate, Earthy, Ceda</p>
+    <p class="price">$19.00 / 250g</p>
+    <button class="btn" onclick="addToCart('Sumatra Mandheling', 19.00)">Add to Cart</button>
+
+  </div>
+</article>
+
+      
+    <article class="product-card">
+  
+  <img src="images/House%20Espresso%20Blend.png" alt="House Espresso Blend" class="product-img">
+  
+  <div class="card-content">
+    <h3>House Espresso Blend</h3>
+    <p class="notes"><strong>Tasting Notes:</strong> Roasted Nuts, Toffee, Bold Crema</p>
+    <p class="price">$15.50 / 250g</p>
+    <button class="btn" onclick="addToCart('House Espresso Blend', 15.50)">Add to Cart</button>
+
+  </div>
+</article>
+
+    </div>
+  </main>
+
+  
+  <footer>
+    <p>&copy; 2026 Bean Boutique Coffee Shop. All rights reserved.</p>
+    <p>123 Coffee Lane, Yangon | Open Daily: 7:00 AM - 8:00 PM</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

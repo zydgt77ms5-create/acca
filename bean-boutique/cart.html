@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Boutique - Shopping Cart</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  
+  <header>
+    <h1>Bean Boutique</h1>
+    <p>Crafting Perfect Coffee Moments</p>
+  </header>
+
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="coffee.html">Coffee Selection</a></li>
+      <li><a href="equipment.html">Brewing Equipment</a></li>
+      <li><a href="events.html">Events & Workshops</a></li>
+      <li><a href="cart.html">Shopping Cart <span id="cart-count" class="cart-badge">3</span></a></li>
+      <li><a href="offers.html">Special Offers</a></li>
+    </ul>
+  </nav>
+
+ 
+  <main class="container">
+    <section class="page-title">
+      <h2>Your Shopping Cart</h2>
+      <p>Review your selected items before proceeding to checkout.</p>
+    </section>
+
+    <div class="cart-container">
+      
+      <div class="cart-table-wrapper">
+        <table class="cart-table">
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Subtotal</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="cart-item-rows">
+  </tbody>
+</table>
+      </div>
+
+      
+      <div class="order-summary">
+  <h3>Order Summary</h3>
+  <hr style="margin: 10px 0; border: 0; border-top: 1px solid #ddd;">
+  
+  <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+    <span>Subtotal:</span>
+    <span id="cart-subtotal">$0.00</span>
+  </div>
+  
+  <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+    <span>Shipping:</span>
+    <span>$5.00</span>
+  </div>
+  
+  <div style="display: flex; justify-content: space-between; font-weight: bold; font-size: 1.2rem; color: var(--highlight-color); margin-bottom: 20px;">
+    <span>Total:</span>
+    <span id="cart-total">$0.00</span>
+  </div>
+  
+  <button id="checkout-button" class="btn" style="width: 100%;">Proceed to Checkout</button>
+</div>
+
+    </div>
+  </main>
+
+ 
+  <footer>
+    <p>&copy; 2026 Bean Boutique Coffee Shop. All rights reserved.</p>
+    <p>123 Coffee Lane, Yangon | Open Daily: 7:00 AM - 8:00 PM</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

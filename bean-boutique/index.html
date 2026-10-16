@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Boutique Coffee Shop - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  
+  <header>
+    <h1>Bean Boutique</h1>
+    <p>Crafting Perfect Coffee Moments</p>
+  </header>
+
+  
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="coffee.html">Coffee Selection</a></li>
+      <li><a href="equipment.html">Brewing Equipment</a></li>
+      <li><a href="events.html">Events & Workshops</a></li>
+       <li><a href="cart.html">Shopping Cart <span id="cart-count" class="cart-badge">0</span></a></li>
+      <li><a href="offers.html">Special Offers</a></li>
+    </ul>
+  </nav>
+
+  
+  <main>
+   
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Welcome to Bean Boutique</h2>
+        <p>Experience artisanal roasted coffee beans, premium brewing tools, and community events.</p>
+        <a href="coffee.html" class="btn">Explore Our Blends</a>
+      </div>
+    </section>
+
+    <section class="featured-products" aria-labelledby="featured-products-title">
+      <div class="container">
+        <div class="featured-products-header">
+          <h2 id="featured-products-title">Featured Coffee Blends</h2>
+          <div class="featured-slider-controls">
+            <button class="featured-slider-toggle" type="button" data-slider-toggle aria-pressed="false">Pause</button>
+            <button class="featured-slider-button" type="button" data-slider-direction="previous" aria-label="Previous coffee blend">&larr;</button>
+            <button class="featured-slider-button" type="button" data-slider-direction="next" aria-label="Next coffee blend">&rarr;</button>
+          </div>
+        </div>
+
+        <div class="featured-slider" id="featured-products-slider" role="group" tabindex="0" aria-label="Featured coffee blends">
+          <div class="featured-slider-track">
+            <article class="product-card featured-slide">
+              <img src="images/Ethiopian%20Yirgacheffe%20Coffee.png" alt="Ethiopian Yirgacheffe Coffee" class="product-img">
+              <div class="card-content">
+                <h3>Ethiopian Yirgacheffe</h3>
+                <p class="notes"><strong>Tasting Notes:</strong> Jasmine, Lemon, Bergamot</p>
+                <p class="price">$18.50 / 250g</p>
+                <button class="btn" onclick="addToCart('Ethiopian Yirgacheffe', 18.50)">Add to Cart</button>
+              </div>
+            </article>
+            <article class="product-card featured-slide">
+              <img src="images/Colombian%20Supremo.jpg" alt="Colombian Supremo Coffee" class="product-img">
+              <div class="card-content">
+                <h3>Colombian Supremo</h3>
+                <p class="notes"><strong>Tasting Notes:</strong> Caramel, Milk Chocolate, Green Apple</p>
+                <p class="price">$16.00 / 250g</p>
+                <button class="btn" onclick="addToCart('Colombian Supremo', 16.00)">Add to Cart</button>
+              </div>
+            </article>
+            <article class="product-card featured-slide">
+              <img src="images/Sumatra%20Mandheling.png" alt="Sumatra Mandheling Coffee" class="product-img">
+              <div class="card-content">
+                <h3>Sumatra Mandheling</h3>
+                <p class="notes"><strong>Tasting Notes:</strong> Dark Chocolate, Earthy, Cedar</p>
+                <p class="price">$19.00 / 250g</p>
+                <button class="btn" onclick="addToCart('Sumatra Mandheling', 19.00)">Add to Cart</button>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="featured-slider-indicators" role="group" aria-label="Choose a coffee blend">
+          <button class="featured-slider-indicator active" type="button" data-slide-index="0" aria-label="Show Ethiopian Yirgacheffe" aria-current="true"></button>
+          <button class="featured-slider-indicator" type="button" data-slide-index="1" aria-label="Show Colombian Supremo"></button>
+          <button class="featured-slider-indicator" type="button" data-slide-index="2" aria-label="Show Sumatra Mandheling"></button>
+        </div>
+      </div>
+    </section>
+
+    
+    <div id="discountModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h2>Get 10% Off Your First Order!</h2>
+        <p>Join the Bean Boutique community and receive an exclusive discount code in your inbox.</p>
+        <form id="subscribeForm" onsubmit="return false;">
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit" class="btn">Claim Discount</button>
+        </form>
+      </div>
+    </div>
+
+    
+    <section class="features">
+      <div class="container feature-grid">
+        <div class="card">
+          <h3>Unique Blends</h3>
+          <p>Discover single-origin coffees and custom hand-crafted espresso blends.</p>
+          <a href="coffee.html" class="card-link">View Coffee Catalogue &rarr;</a>
+        </div>
+
+        <div class="card">
+          <h3>Brewing Gear</h3>
+          <p>From espresso machines to French presses, find tools for the perfect cup.</p>
+          <a href="equipment.html" class="card-link">Shop Equipment &rarr;</a>
+        </div>
+
+        <div class="card">
+          <h3>Events & Workshops</h3>
+          <p>Join coffee tasting sessions and masterclasses with our expert roasters.</p>
+          <a href="events.html" class="card-link">Join a Workshop &rarr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer>
+    <p>&copy; 2026 Bean Boutique Coffee Shop. All rights reserved.</p>
+    <p>123 Coffee Lane, Yangon | Open Daily: 7:00 AM - 8:00 PM</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

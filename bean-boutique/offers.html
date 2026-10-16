@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Boutique - Special Offers</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  
+  <header>
+    <h1>Bean Boutique</h1>
+    <p>Crafting Perfect Coffee Moments</p>
+  </header>
+
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="coffee.html">Coffee Selection</a></li>
+      <li><a href="equipment.html">Brewing Equipment</a></li>
+      <li><a href="events.html">Events & Workshops</a></li>
+      <li><a href="cart.html">Shopping Cart <span id="cart-count" class="cart-badge">0</span></a></li>
+      <li><a href="offers.html" class="active">Special Offers</a></li>
+    </ul>
+  </nav>
+
+  
+  <main class="container">
+    <section class="page-title">
+      <h2>Exclusive Deals & Promotional Offers</h2>
+      <p>Save big on your favorite coffee beans, brewing bundles, and seasonal discounts.</p>
+    </section>
+
+    
+    <section class="offer-banner">
+      <div class="banner-content">
+        <h2>Limited-Time Weekend Deal!</h2>
+        <p>Get <strong>20% OFF</strong> on all Ethiopian Single-Origin Coffees. Offer ends in:</p>
+        
+        <div id="countdown" class="timer-display">
+          <div><span id="days">00</span><p>Days</p></div>
+          <div><span id="hours">00</span><p>Hours</p></div>
+          <div><span id="minutes">00</span><p>Minutes</p></div>
+          <div><span id="seconds">00</span><p>Seconds</p></div>
+        </div>
+      </div>
+    </section>
+
+   
+   <div class="catalogue-grid">
+      <h2>Featured Offers</h2>
+      
+
+  <article class="product-card">
+    <div class="badge-tag">Save 20%</div>
+    <img src="images/Starter%20Brew%20Bundle.jpg" alt="Starter Brew Bundle" class="product-img">
+    <div class="card-content">
+      <h3>Starter Brew Bundle</h3>
+      <p class="notes"><strong>Includes:</strong> V60 Dripper, Server, 100 Filters & 250g Ethiopian Coffee</p>
+      <p class="price"><span class="old-price">$45.00</span> $36.00</p>
+      <button class="btn" onclick="addToCart('Starter Brew Bundle', 36.00)">Add to Cart</button>
+    </div>
+  </article>
+
+  
+  <article class="product-card">
+    <div class="badge-tag warning">Buy 2 Get 1</div>
+    <img src="images/Roaster%27s%20Choice%20Trio.jpeg" alt="Roaster's Choice Trio" class="product-img">
+    <div class="card-content">
+      <h3>Roaster's Choice Trio</h3>
+      <p class="notes"><strong>Includes:</strong> 3x 250g Bags (Ethiopian, Colombian, Sumatra)</p>
+      <p class="price">$38.00</p>
+      <button class="btn" onclick="addToCart('Roasters Choice Trio', 38.00)">Add to Cart</button>
+    </div>
+  </article>
+
+
+  <article class="product-card">
+    <div class="badge-tag">Save 15%</div>
+    <img src="images/Grinder%20%26%20Bean%20Combo.jpg" alt="Grinder & Bean Combo" class="product-img">
+    <div class="card-content">
+      <h3>Grinder & Bean Combo</h3>
+      <p class="notes"><strong>Includes:</strong> Electric Burr Grinder & Free House Blend Bag</p>
+      <p class="price"><span class="old-price">$110.00</span> $93.50</p>
+      <button class="btn" onclick="addToCart('Grinder and Bean Combo', 93.50)">Add to Cart</button>
+    </div>
+  </article>
+
+</div>
+
+  </main>
+
+  
+  <footer>
+    <p>&copy; 2026 Bean Boutique Coffee Shop. All rights reserved.</p>
+    <p>123 Coffee Lane, Yangon | Open Daily: 7:00 AM - 8:00 PM</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
