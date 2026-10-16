@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Boutique - Events & Workshops</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+
+ 
+  <header>
+    <h1>Bean Boutique</h1>
+    <p>Crafting Perfect Coffee Moments</p>
+  </header>
+
+ 
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="coffee.html">Coffee Selection</a></li>
+      <li><a href="equipment.html">Brewing Equipment</a></li>
+      <li><a href="events.html" class="active">Events & Workshops</a></li>
+      <li><a href="cart.html">Shopping Cart <span id="cart-count" class="cart-badge">3</span></a></li>
+      <li><a href="offers.html">Special Offers</a></li>
+    </ul>
+  </nav>
+
+  
+  <main class="container">
+    <section class="page-title">
+      <h2>Upcoming Events & Workshops</h2>
+      <p>Join our community for exclusive coffee tasting sessions, masterclasses, and meet-the-roaster events.</p>
+    </section>
+
+   
+<section class="events-list">
+  <h2>Featured Events</h2>
+  
+  
+ <article class="card event-card">
+    <img src="images/RoastingProcessingWorkshops.jpeg" alt="Roasting & Processing Workshops" class="event-img">
+    <div class="event-details">
+      <h3>Roasting & Processing Workshops</h3>
+      <p><strong>Date:</strong> November 10, 2026 | <strong>Time:</strong> 9:00 AM - 11:00 PM</p>
+      <p>There are also events that provide hands-on training on coffee bean roasting and coffee processing methods (Honey, Natural, Washed, etc.).</p>
+    </div>
+  </article>
+ 
+  <article class="card event-card">
+    <img src="images/Mastering%20Latte%20Art.png" alt="Latte Art Workshop" class="event-img">
+    <div class="event-details">
+      <h3>Mastering Latte Art</h3>
+      <p><strong>Date:</strong> November 15, 2026 | <strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+      <p>Learn the secrets of texturing milk and pouring beautiful latte art designs from our expert baristas.</p>
+    </div>
+  </article>
+
+  
+  <article class="card event-card">
+    <img src="images/Single-Origin%20Tasting%20Journey.jpeg" alt="Coffee Tasting Event" class="event-img">
+    <div class="event-details">
+      <h3>Single-Origin Tasting Journey</h3>
+      <p><strong>Date:</strong> November 22, 2026 | <strong>Time:</strong> 2:00 PM - 4:00 PM</p>
+      <p>A guided cupping session exploring unique flavor profiles from Ethiopia, Colombia, and Brazil.</p>
+    </div>
+  </article>
+
+</section>
+
+    <section class="event-video" aria-labelledby="event-video-title">
+      <h2 id="event-video-title">Watch Our Event Video</h2>
+      <div class="event-video-frame">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/Y52WQygSrmQ"
+          title="Bean Boutique event video"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    
+    <section class="registration-form">
+      <h2>Event Registration</h2>
+      <p>Fill out the form below to secure your spot for our upcoming workshops.</p>
+      
+      
+      <form id="event-registration-form" action="mailto:info@beanboutique.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="firstName">First Name *</label>
+          <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
+        </div>
+        
+        <div class="form-group">
+          <label for="lastName">Last Name *</label>
+          <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name">
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+          <label for="eventSelect">Select Event *</label>
+          <select id="eventSelect" name="eventSelect" required>
+            <option value="" selected disabled>Choose an event</option>
+            <option value="latte_art">Mastering Latte Art - Nov 15</option>
+            <option value="tasting">Single-Origin Tasting - Nov 22</option>
+          </select>
+        </div>
+        
+        <button type="submit" class="btn">Register Now</button>
+      </form>
+    </section>
+
+    
+    <section class="map-section">
+      <h2>Find Our Coffee Shop</h2>
+      <div id="map"></div>
+      <div class="google-reviews-link">
+        <h3>Google Reviews</h3>
+        <a class="btn" href="https://www.google.com/search?q=Bean+Boutique+Coffee+Shop+Yangon+reviews" target="_blank" rel="noopener noreferrer">Find Reviews on Google</a>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer>
+    <p>&copy; 2026 Bean Boutique Coffee Shop. All rights reserved.</p>
+    <p>123 Coffee Lane, Yangon | Open Daily: 7:00 AM - 8:00 PM</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
